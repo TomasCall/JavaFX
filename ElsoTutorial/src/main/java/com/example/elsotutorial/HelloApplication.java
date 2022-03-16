@@ -3,6 +3,7 @@ package com.example.elsotutorial;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -18,20 +19,17 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class HelloApplication extends Application {
 
-    public static void main(String[] args) {
-        launch(args);
-    }
-
     @Override
-    public void start(Stage stage) throws Exception {
-        Group root = new Group();
-        Scene scene = new Scene(root,600,600,Color.SKYBLUE);
+    public void start(Stage primaryStage) throws Exception {
+        //Group root = new Group();
+        //Scene scene = new Scene(root,600,600,Color.SKYBLUE);
 
         //Window title
-        stage.setTitle("Demo program");
+        //stage.setTitle("Demo program");
 
         //Window width and height
         //stage.setWidth(420);
@@ -47,7 +45,7 @@ public class HelloApplication extends Application {
         //stage.setFullScreenExitHint("You tarped inside here :)");
         //Fullscreen exit button
         //stage.setFullScreenExitKeyCombination(KeyCombination.valueOf("q"));
-
+        /*
         //Draving
         //Text
         Text text = new Text();
@@ -94,12 +92,12 @@ public class HelloApplication extends Application {
         circle.setFill(Color.ORANGE);
 
         //Image
-        /*
+
         Image image = new Image("./999506.png");
         ImageView imageView = new ImageView(image);
         imageView.setX(400);
         imageView.setY(400);
-         */
+
 
         root.getChildren().add(text);
         root.getChildren().add(line);
@@ -108,7 +106,26 @@ public class HelloApplication extends Application {
         root.getChildren().add(circle);
         //root.getChildren().add(imageView);
 
-        stage.setScene(scene);
-        stage.show();
+        //stage.setScene(scene);
+        //stage.show();
+        //primaryStage.setScene(scene);
+        //primaryStage.show();
+
+        */
+
+
+        Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
+
+        Scene scene = new Scene(root, 300, 275);
+
+        primaryStage.setTitle("FXML Welcome");
+        primaryStage.setScene(scene);
+        primaryStage.show();
     }
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+
+
 }
