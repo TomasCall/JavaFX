@@ -113,14 +113,16 @@ public class HelloApplication extends Application {
 
         */
 
+        try{
+            Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
+            Scene scene = new Scene(root); //300, 275);
+            primaryStage.setTitle("FXML Welcome");
+            primaryStage.setScene(scene);
+            primaryStage.show();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
 
-        Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
-
-        Scene scene = new Scene(root, 300, 275);
-
-        primaryStage.setTitle("FXML Welcome");
-        primaryStage.setScene(scene);
-        primaryStage.show();
     }
 
     public static void main(String[] args) {
