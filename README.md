@@ -8,4 +8,4 @@
 3. Scenes and drawing stuff - (2022.03.15)
 4. Install SceneBuilder - (2022.03.16)
 5. Event handling using SceneBuilder - (2022.03.17)
-
+6. CSS Styling - (2022.03.18)
