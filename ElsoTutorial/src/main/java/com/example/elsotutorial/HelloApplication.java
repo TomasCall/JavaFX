@@ -107,12 +107,20 @@ public class HelloApplication extends Application {
             primaryStage.setScene(scene);
             primaryStage.show();
              */
+            //CSS
+            /*
             Parent root = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
             Scene scene = new Scene(root); //300, 275);
             //scene.getStylesheets().add(String.valueOf(getClass().getResource("application.css")));
             //With more scenes
             String css = this.getClass().getResource("application.css").toExternalForm();
             scene.getStylesheets().add(css);
+            primaryStage.setScene(scene);
+            primaryStage.show();
+            */
+            //Switch Scenes
+            Parent root = FXMLLoader.load(getClass().getResource("scene1.fxml"));
+            Scene scene = new Scene(root);
             primaryStage.setScene(scene);
             primaryStage.show();
         }catch (Exception e){
