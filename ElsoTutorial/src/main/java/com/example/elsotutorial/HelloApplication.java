@@ -119,7 +119,14 @@ public class HelloApplication extends Application {
             primaryStage.show();
             */
             //Switch Scenes
+            /*
             Parent root = FXMLLoader.load(getClass().getResource("scene1.fxml"));
+            Scene scene = new Scene(root);
+            primaryStage.setScene(scene);
+            primaryStage.show();
+             */
+            //Communication between controllers
+            Parent root = FXMLLoader.load(getClass().getResource("Scene1.fxml"));
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
             primaryStage.show();
