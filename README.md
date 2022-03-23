@@ -9,3 +9,5 @@
 4. Install SceneBuilder - (2022.03.16)
 5. Event handling using SceneBuilder - (2022.03.17)
 6. CSS Styling - (2022.03.18)
+7. Switch scenes - (2022.03.21)
+8. Communicating between scenes - (2022.03.22)
