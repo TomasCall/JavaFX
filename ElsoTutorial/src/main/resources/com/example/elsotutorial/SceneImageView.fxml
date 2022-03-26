@@ -9,7 +9,7 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.elsotutorial.ImageViewController">
    <children>
       <Button fx:id="myButton" layoutX="269.0" layoutY="319.0" mnemonicParsing="false" onAction="#displayImage" text="Button" />
-      <ImageView fx:id="myImageView" fitHeight="260.0" fitWidth="309.0" layoutX="146.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="myImageView" fitHeight="260.0" fitWidth="309.0" layoutX="146.0" layoutY="39.0" onMouseEntered="#displayImage" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Shrek1.jpg" />
          </image>
