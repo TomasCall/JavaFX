@@ -136,6 +136,7 @@ public class HelloApplication extends Application {
             primaryStage.show();
              */
             //Logout
+            /*
             Parent root = FXMLLoader.load(getClass().getResource("Scene.fxml"));
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
@@ -145,6 +146,12 @@ public class HelloApplication extends Application {
                 windowEvent.consume();
                 logout(primaryStage);
             });
+             */
+            //ImageView
+            Parent root = FXMLLoader.load(getClass().getResource("SceneImageView.fxml"));
+            Scene scene = new Scene(root);
+            primaryStage.setScene(scene);
+            primaryStage.show();
         }catch (Exception e){
             e.printStackTrace();
         }
