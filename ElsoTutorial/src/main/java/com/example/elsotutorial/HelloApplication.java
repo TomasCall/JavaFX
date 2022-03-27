@@ -148,7 +148,14 @@ public class HelloApplication extends Application {
             });
              */
             //ImageView
+            /*
             Parent root = FXMLLoader.load(getClass().getResource("SceneImageView.fxml"));
+            Scene scene = new Scene(root);
+            primaryStage.setScene(scene);
+            primaryStage.show();
+             */
+            //Input verification
+            Parent root = FXMLLoader.load(getClass().getResource("SceneInputVerification.fxml"));
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
             primaryStage.show();
