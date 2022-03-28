@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="488.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.elsotutorial.CheckboxController">
+   <children>
+      <CheckBox fx:id="myCheckbox" layoutX="159.0" layoutY="335.0" mnemonicParsing="false" onAction="#change" text="ON / OFF">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </CheckBox>
+      <Label fx:id="myLabel" layoutX="208.0" layoutY="273.0" text="OFF">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="myImageView" fitHeight="259.0" fitWidth="295.0" layoutX="94.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Shrek1.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

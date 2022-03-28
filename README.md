@@ -14,3 +14,4 @@
 9. Logout /exit button - (2022.03.25)
 10. Imageview - (2022.03.26)
 11. Input Verification - (2022.03.27)
+12. Checkbox - (2022.03.28)

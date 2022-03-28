@@ -155,7 +155,13 @@ public class HelloApplication extends Application {
             primaryStage.show();
              */
             //Input verification
+            /*
             Parent root = FXMLLoader.load(getClass().getResource("SceneInputVerification.fxml"));
+            Scene scene = new Scene(root);
+            primaryStage.setScene(scene);
+            primaryStage.show();
+             */
+            Parent root = FXMLLoader.load(getClass().getResource("SceneCheckbox.fxml"));
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
             primaryStage.show();
