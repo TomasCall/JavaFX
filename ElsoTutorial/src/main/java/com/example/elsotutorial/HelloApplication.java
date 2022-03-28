@@ -9,6 +9,8 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.stage.Stage;
 
+import java.util.Objects;
+
 public class HelloApplication extends Application {
 
     @Override
@@ -161,7 +163,7 @@ public class HelloApplication extends Application {
             primaryStage.setScene(scene);
             primaryStage.show();
              */
-            Parent root = FXMLLoader.load(getClass().getResource("SceneCheckbox.fxml"));
+            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("SceneCheckbox.fxml")));
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
             primaryStage.show();

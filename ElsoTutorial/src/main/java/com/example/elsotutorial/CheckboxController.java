@@ -7,6 +7,8 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
+import java.util.Objects;
+
 public class CheckboxController {
     @FXML
     private CheckBox myCheckbox;
@@ -15,8 +17,8 @@ public class CheckboxController {
     @FXML
     private ImageView myImageView;
 
-    Image myImage1 = new Image(getClass().getResourceAsStream("Shrek1.jpg"));
-    Image myImage2 = new Image(getClass().getResourceAsStream("Shrek2.jpg"));
+    Image myImage1 = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Shrek1.jpg")));
+    Image myImage2 = new Image(Objects.requireNonNull(getClass().getResourceAsStream("Shrek2.jpg")));
 
     public void change(ActionEvent event){
         if (myCheckbox.isSelected()){
