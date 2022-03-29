@@ -163,7 +163,15 @@ public class HelloApplication extends Application {
             primaryStage.setScene(scene);
             primaryStage.show();
              */
+            //Checkbox
+            /*
             Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("SceneCheckbox.fxml")));
+            Scene scene = new Scene(root);
+            primaryStage.setScene(scene);
+            primaryStage.show();
+             */
+            //Radio buttons
+            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("SceneRadio.fxml")));
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
             primaryStage.show();
