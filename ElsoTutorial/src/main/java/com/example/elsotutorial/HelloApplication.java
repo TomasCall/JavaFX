@@ -171,7 +171,14 @@ public class HelloApplication extends Application {
             primaryStage.show();
              */
             //Radio buttons
+            /*
             Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("SceneRadio.fxml")));
+            Scene scene = new Scene(root);
+            primaryStage.setScene(scene);
+            primaryStage.show();
+             */
+            //DatePicker
+            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("SceneDatePicker.fxml")));
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
             primaryStage.show();
