@@ -178,7 +178,14 @@ public class HelloApplication extends Application {
             primaryStage.show();
              */
             //DatePicker
+            /*
             Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("SceneDatePicker.fxml")));
+            Scene scene = new Scene(root);
+            primaryStage.setScene(scene);
+            primaryStage.show();
+             */
+            //ChoiceBox
+            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("SceneChoiceBox.fxml")));
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
             primaryStage.show();
