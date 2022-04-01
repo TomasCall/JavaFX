@@ -192,7 +192,13 @@ public class HelloApplication extends Application {
             primaryStage.show();
              */
             //ColorPicker
+            /*
             Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("SceneColorPicker.fxml")));
+            Scene scene = new Scene(root);
+            primaryStage.setScene(scene);
+            primaryStage.show();
+             */
+            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("SceneSlider.fxml")));
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
             primaryStage.show();

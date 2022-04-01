@@ -19,3 +19,4 @@
 13. DatePicker - (2022.03.30)
 14. ChoiceBox - (2022.03.31)
 15. ColorPicker - (2022.03.31)
+16. Sliders - (2022.04.01)
