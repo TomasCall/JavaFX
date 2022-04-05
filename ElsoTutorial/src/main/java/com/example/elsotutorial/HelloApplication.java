@@ -198,7 +198,15 @@ public class HelloApplication extends Application {
             primaryStage.setScene(scene);
             primaryStage.show();
              */
+            //Slider
+            /*
             Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("SceneSlider.fxml")));
+            Scene scene = new Scene(root);
+            primaryStage.setScene(scene);
+            primaryStage.show();
+             */
+            //Progress bar
+            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("SceneProgressBar.fxml")));
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
             primaryStage.show();
