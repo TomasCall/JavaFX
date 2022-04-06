@@ -21,3 +21,4 @@
 15. ColorPicker - (2022.03.31)
 16. Sliders - (2022.04.01)
 17. ProgressBar - (2022.04.05)
+18. Spinner - (2022.04.06)
