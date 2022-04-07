@@ -212,7 +212,15 @@ public class HelloApplication extends Application {
             primaryStage.setScene(scene);
             primaryStage.show();
              */
+            //Spinner
+            /*
             Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("SceneSpinner.fxml")));
+            Scene scene = new Scene(root);
+            primaryStage.setScene(scene);
+            primaryStage.show();
+             */
+            //ListView
+            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("SceneListView.fxml")));
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
             primaryStage.show();
