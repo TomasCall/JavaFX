@@ -227,7 +227,13 @@ public class HelloApplication extends Application {
             primaryStage.show();
              */
             //TreeView
+            /*
             Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("SceneTreeView.fxml")));
+            Scene scene = new Scene(root);
+            primaryStage.setScene(scene);
+            primaryStage.show();
+             */
+            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("SceneMenuBar.fxml")));
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
             primaryStage.show();
