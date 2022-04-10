@@ -233,7 +233,15 @@ public class HelloApplication extends Application {
             primaryStage.setScene(scene);
             primaryStage.show();
              */
+            //Menubar
+            /*
             Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("SceneMenuBar.fxml")));
+            Scene scene = new Scene(root);
+            primaryStage.setScene(scene);
+            primaryStage.show();
+             */
+            //FlowPane
+            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("SceneFlowPane.fxml")));
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
             primaryStage.show();
