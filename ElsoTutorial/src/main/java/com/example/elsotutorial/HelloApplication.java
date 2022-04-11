@@ -2,11 +2,13 @@ package com.example.elsotutorial;
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
+import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 
 import java.util.Objects;
@@ -241,8 +243,43 @@ public class HelloApplication extends Application {
             primaryStage.show();
              */
             //FlowPane
+            /*
             Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("SceneFlowPane.fxml")));
             Scene scene = new Scene(root);
+            primaryStage.setScene(scene);
+            primaryStage.show();
+             */
+            //Key evetns
+            FXMLLoader loader = new FXMLLoader(Objects.requireNonNull(getClass().getResource("SceneKeyEvents.fxml")));
+            Parent root = loader.load();
+
+            KeyEventsController controller = loader.getController();
+
+            Scene scene = new Scene(root);
+
+            scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
+                @Override
+                public void handle(KeyEvent keyEvent) {
+                    //System.out.println(keyEvent.getCode());
+                    switch (keyEvent.getCode()){
+                        case UP:
+                            controller.moveUp();
+                            break;
+                        case DOWN:
+                            controller.moveDown();
+                            break;
+                        case RIGHT:
+                            controller.moveRight();
+                            break;
+                        case LEFT:
+                            controller.moveLeft();
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            });
+
             primaryStage.setScene(scene);
             primaryStage.show();
         }catch (Exception e){
