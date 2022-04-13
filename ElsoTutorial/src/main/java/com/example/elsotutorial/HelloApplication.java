@@ -250,6 +250,7 @@ public class HelloApplication extends Application {
             primaryStage.show();
              */
             //Key evetns
+            /*
             FXMLLoader loader = new FXMLLoader(Objects.requireNonNull(getClass().getResource("SceneKeyEvents.fxml")));
             Parent root = loader.load();
 
@@ -280,6 +281,11 @@ public class HelloApplication extends Application {
                 }
             });
 
+            primaryStage.setScene(scene);
+            primaryStage.show();
+             */
+            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("SceneAnimations.fxml")));
+            Scene scene = new Scene(root);
             primaryStage.setScene(scene);
             primaryStage.show();
         }catch (Exception e){
