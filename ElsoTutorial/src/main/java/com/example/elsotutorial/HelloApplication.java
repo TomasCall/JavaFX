@@ -284,7 +284,13 @@ public class HelloApplication extends Application {
             primaryStage.setScene(scene);
             primaryStage.show();
              */
+            /*
             Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("SceneAnimations.fxml")));
+            Scene scene = new Scene(root);
+            primaryStage.setScene(scene);
+            primaryStage.show();
+             */
+            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("MediaViewScene.fxml")));
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
             primaryStage.show();
