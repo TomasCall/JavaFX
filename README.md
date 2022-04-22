@@ -33,3 +33,5 @@
 ## Qiuz
 
 1. Created the design and a basic controller class
+
+Some problem occuerd with the pom.xml file so i paused this project
